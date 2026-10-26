@@ -287,6 +287,40 @@ button {
   gap: 10px;
 }
 
+.lang-switcher {
+  display: inline-flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: var(--radius-full);
+  padding: 2px;
+  gap: 2px;
+}
+
+.lang-btn {
+  background: transparent;
+  border: none;
+  color: var(--text-dim);
+  font-family: var(--font-main);
+  font-size: 0.68rem;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: var(--radius-full);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  line-height: 1;
+}
+
+.lang-btn:hover {
+  color: #fff;
+}
+
+.lang-btn.active {
+  background: linear-gradient(135deg, var(--magenta), var(--violet));
+  color: #fff;
+  box-shadow: 0 0 10px rgba(255, 63, 157, 0.4);
+}
+
 .badge-online {
   display: inline-flex;
   align-items: center;
@@ -948,6 +982,31 @@ button {
   font-weight: 500;
 }
 
+.compare-tag-bad {
+  display: inline-block;
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: #ef4444;
+  background: rgba(239, 68, 68, 0.1);
+  border: 1px solid rgba(239, 68, 68, 0.25);
+  padding: 6px 12px;
+  border-radius: var(--radius-full);
+  margin: 12px 0 16px;
+}
+
+.compare-tag-good {
+  display: inline-block;
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: #22c55e;
+  background: rgba(34, 197, 94, 0.12);
+  border: 1px solid rgba(34, 197, 94, 0.3);
+  padding: 6px 14px;
+  border-radius: var(--radius-full);
+  margin: 12px 0 16px;
+  text-shadow: 0 0 12px rgba(34, 197, 94, 0.3);
+}
+
 .compare-good {
   position: relative;
   background: linear-gradient(155deg, #1f0b2a 0%, #110518 100%);
@@ -1254,6 +1313,44 @@ button {
 
 .price-container {
   margin-bottom: 24px;
+}
+
+.access-status-container {
+  background: rgba(34, 197, 94, 0.08);
+  border: 1px solid rgba(34, 197, 94, 0.3);
+  border-radius: var(--radius-md);
+  padding: 16px 20px;
+  margin: 0 auto 24px;
+  max-width: 460px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.access-status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 0.72rem;
+  font-weight: 800;
+  color: var(--green-online);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+.access-status-title {
+  font-size: 1.18rem;
+  font-weight: 800;
+  color: #fff;
+  margin: 0 0 6px;
+  letter-spacing: -0.01em;
+}
+
+.access-status-desc {
+  font-size: 0.82rem;
+  color: #cbd5e1;
+  line-height: 1.45;
+  display: block;
 }
 
 .price-old {
@@ -1632,6 +1729,16 @@ button {
     gap: 4px;
   }
 
+  .lang-switcher {
+    padding: 1px;
+    gap: 1px;
+  }
+
+  .lang-btn {
+    font-size: 0.62rem;
+    padding: 2px 6px;
+  }
+
   .pulsing-green-dot {
     width: 6px;
     height: 6px;
@@ -1899,6 +2006,18 @@ button {
     margin: 8px 0 14px;
   }
 
+  .compare-tag-bad {
+    font-size: 0.78rem;
+    padding: 5px 10px;
+    margin: 8px 0 12px;
+  }
+
+  .compare-tag-good {
+    font-size: 0.84rem;
+    padding: 5px 12px;
+    margin: 8px 0 12px;
+  }
+
   .compare-list {
     font-size: 0.82rem;
     gap: 9px;
@@ -2004,6 +2123,23 @@ button {
   }
 
   .price-notice {
+    font-size: 0.74rem;
+  }
+
+  .access-status-container {
+    padding: 12px 14px;
+    margin-bottom: 18px;
+  }
+
+  .access-status-badge {
+    font-size: 0.65rem;
+  }
+
+  .access-status-title {
+    font-size: 1.02rem;
+  }
+
+  .access-status-desc {
     font-size: 0.74rem;
   }
 
