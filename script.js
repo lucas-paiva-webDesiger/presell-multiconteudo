@@ -320,7 +320,7 @@ function initCosmosCanvas() {
     canvas.height = Math.round(window.innerHeight * ratio);
     ctx.setTransform(ratio, 0, 0, ratio, 0, 0);
 
-    const count = window.innerWidth < 768 ? 60 : 110;
+    const count = window.innerWidth < 768 ? 35 : 110;
     stars = Array.from({ length: count }, (_, i) => ({
       x: Math.random() * window.innerWidth,
       y: Math.random() * window.innerHeight,
