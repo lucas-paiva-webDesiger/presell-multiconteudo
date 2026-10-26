@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 600" width="450" height="600">
+  <defs>
+    <linearGradient id="p2Bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#190733" />
+      <stop offset="50%" stop-color="#0c031c" />
+      <stop offset="100%" stop-color="#05010a" />
+    </linearGradient>
+    <filter id="p2Blur" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="22" />
+    </filter>
+  </defs>
+  <rect width="450" height="600" fill="url(#p2Bg)"/>
+  <g filter="url(#p2Blur)">
+    <circle cx="270" cy="190" r="140" fill="#a855f7" opacity="0.6"/>
+    <ellipse cx="180" cy="370" rx="100" ry="200" fill="#ec4899" opacity="0.5"/>
+    <path d="M260 120 C210 240, 150 320, 200 480" stroke="#38bdf8" stroke-width="50" fill="none" opacity="0.45"/>
+  </g>
+  <rect width="450" height="600" fill="#000" opacity="0.2"/>
+</svg>

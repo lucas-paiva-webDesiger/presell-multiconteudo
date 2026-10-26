@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 600" width="450" height="600">
+  <defs>
+    <linearGradient id="p1Bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b0726" />
+      <stop offset="50%" stop-color="#190415" />
+      <stop offset="100%" stop-color="#070208" />
+    </linearGradient>
+    <radialGradient id="p1Glow" cx="45%" cy="35%" r="55%">
+      <stop offset="0%" stop-color="#ff3f9d" stop-opacity="0.65" />
+      <stop offset="100%" stop-color="#ff3f9d" stop-opacity="0" />
+    </radialGradient>
+    <filter id="p1Blur" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="20" />
+    </filter>
+  </defs>
+  <rect width="450" height="600" fill="url(#p1Bg)"/>
+  <g filter="url(#p1Blur)">
+    <circle cx="210" cy="180" r="140" fill="url(#p1Glow)"/>
+    <ellipse cx="240" cy="360" rx="95" ry="190" fill="#a855f7" opacity="0.5"/>
+    <path d="M150 150 C130 240, 310 270, 230 470 C190 540, 140 500, 120 590" stroke="#ff3f9d" stroke-width="70" fill="none" opacity="0.6"/>
+  </g>
+  <rect width="450" height="600" fill="#000" opacity="0.25"/>
+</svg>

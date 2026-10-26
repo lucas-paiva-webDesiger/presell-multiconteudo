@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <meta name="theme-color" content="#06020a">
+  <meta name="color-scheme" content="dark">
+  <title>Mega Acervo VIP • +500 Criadoras & Conteúdos Exclusivos no Telegram</title>
+  <meta name="description" content="O maior acervo de conteúdos exclusivos, OnlyFans, Privacy, amadoras e vazados do Telegram. +50.000 fotos e vídeos sem censura com acesso imediato.">
+  <meta name="robots" content="noindex, nofollow">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Mega Acervo VIP • +500 Criadoras no Telegram">
+  <meta property="og:description" content="Acesse o maior acervo exclusivo com +50.000 fotos e vídeos sem censura.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/hub-logo.svg">
+
+  <!-- Google Fonts: Inter + Playfair Display -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+
+  <!-- Fundo Cósmico Interativo -->
+  <div class="cosmos" aria-hidden="true">
+    <canvas id="cosmos-canvas" class="cosmos-canvas"></canvas>
+    <div class="nebula nebula-pink"></div>
+    <div class="nebula nebula-purple"></div>
+    <div class="nebula nebula-blue"></div>
+  </div>
+
+  <!-- Camada de Corações ao Tocar/Clicar -->
+  <div id="heart-layer" class="heart-layer" aria-hidden="true"></div>
+
+  <!-- Top Bar / Header -->
+  <header class="site-header">
+    <div class="header-inner container">
+      <div class="brand">
+        <div class="brand-logo-wrap">
+          <img id="header-logo" src="assets/hub-logo.svg" alt="Mega Acervo VIP" class="brand-logo" width="40" height="40">
+        </div>
+        <div class="brand-info">
+          <div class="brand-name-row">
+            <span class="brand-name" id="header-hub-name">MEGA ACERVO VIP</span>
+            <span class="brand-verified" title="Canal Oficial Verificado">
+              <svg viewBox="0 0 24 24" class="verified-svg"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+            </span>
+          </div>
+          <span class="brand-tagline">CANAL OFICIAL TELEGRAM</span>
+        </div>
+      </div>
+
+      <div class="header-badges">
+        <span class="badge-online">
+          <span class="pulsing-green-dot"></span>
+          <span id="header-online-count">312 online</span>
+        </span>
+        <span class="badge-18">+18 ANOS</span>
+        <a href="#entrar" class="btn btn-sm btn-header js-tg-link">
+          <svg class="tg-mini-icon" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8l-1.13 7.19c-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59l2.76-2.69a.2.2 0 00-.26-.2c-2.73 1.84-4.22 2.79-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.75-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/></svg>
+          Entrar no VIP
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Live Ticker de Atualizações Recentes -->
+  <div class="updates-ticker" aria-hidden="true">
+    <div class="ticker-inner">
+      <div class="ticker-item"><span class="ticker-fire">🔥</span> <strong>Novo Pack Top Privacy</strong> adicionado há 9 minutos</div>
+      <div class="ticker-item"><span class="ticker-fire">⚡</span> <strong>+180 Fotos de Amadoras</strong> atualizadas hoje</div>
+      <div class="ticker-item"><span class="ticker-fire">🔞</span> <strong>Vídeo Exclusivo 4K (32 min)</strong> liberado no canal</div>
+      <div class="ticker-item"><span class="ticker-fire">👑</span> <strong>Famosinhas do TikTok</strong> pack completo atualizado</div>
+      <div class="ticker-item"><span class="ticker-fire">🔥</span> <strong>Novo Pack Top Privacy</strong> adicionado há 9 minutos</div>
+      <div class="ticker-item"><span class="ticker-fire">⚡</span> <strong>+180 Fotos de Amadoras</strong> atualizadas hoje</div>
+    </div>
+  </div>
+
+  <main id="main-content">
+    
+    <!-- Hero Principal -->
+    <section class="hero-section">
+      <div class="container hero-container">
+        
+        <!-- Logo Central com Brilho Cósmico -->
+        <div class="hub-logo-showcase">
+          <div class="logo-glow-ring"></div>
+          <img id="hero-logo" src="assets/hub-logo.svg" alt="Mega Acervo" class="hero-logo-img">
+        </div>
+
+        <div class="hero-copy">
+          <div class="eyebrow-tag">
+            <span class="fire-icon">🔞</span>
+            <span id="hero-tagline">+500 CRIADORAS REUNIDAS • PRIVACY & ONLYFANS</span>
+          </div>
+
+          <h1 class="hero-title">
+            Tudo o que você procura em um <br>
+            <span class="gradient-text">único canal secreto.</span>
+          </h1>
+
+          <p class="hero-description" id="hero-desc">
+            Não gaste centenas de reais assinando perfis individuais. Tenha acesso completo ao maior acervo de conteúdos exclusivos, criadoras famosas, amadoras e vazados sem censura direto no seu Telegram.
+          </p>
+
+          <!-- BOTÃO TELEGRAM PRINCIPAL (CTA) -->
+          <div class="cta-block" id="entrar">
+            <a href="#" class="btn-telegram-primary js-tg-link">
+              <span class="btn-shine"></span>
+              <div class="btn-content">
+                <div class="tg-icon-wrap">
+                  <svg class="tg-icon-svg" viewBox="0 0 24 24">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.75-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/>
+                  </svg>
+                </div>
+                <div class="btn-text-group">
+                  <span class="btn-headline">LIBERAR ACERVO COMPLETO NO TELEGRAM</span>
+                  <span class="btn-subtext">+50.000 Fotos e Vídeos • Acesso Vitalício • 100% Sigiloso</span>
+                </div>
+                <div class="btn-arrow">➔</div>
+              </div>
+            </a>
+
+            <!-- Selos de Confiança -->
+            <div class="trust-tags">
+              <span>🔒 Fatura Discreta no Cartão/PIX</span>
+              <span>⚡ Liberação Automática na Hora</span>
+              <span>🔞 +18 Anos</span>
+            </div>
+          </div>
+
+          <!-- Ribbon com Estatísticas do Acervo -->
+          <div class="stats-ribbon">
+            <div class="stat-item">
+              <span class="stat-number" id="stat-medias">+50.000</span>
+              <span class="stat-label">Fotos & Vídeos</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-number" id="stat-models">+500</span>
+              <span class="stat-label">Criadoras VIP</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-number" id="stat-members">+6.840</span>
+              <span class="stat-label">Membros Ativos</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-number">⭐ 4.9/5</span>
+              <span class="stat-label">Satisfação</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Vitrine de Conteúdos & Categorias -->
+    <section class="section showcase-section" id="vitrine">
+      <div class="container">
+        
+        <div class="section-heading text-center">
+          <span class="section-tag">👑 COLEÇÃO VIP DISPONÍVEL</span>
+          <h2 class="section-title">O que está liberado dentro do canal</h2>
+          <p class="section-desc">Packs completos organizados por pastas e nomes, prontos para assistir ou baixar sem travar.</p>
+        </div>
+
+        <!-- Filtros Interativos de Categorias -->
+        <div class="category-tabs" id="category-tabs">
+          <button class="tab-btn active" data-category="all">🔥 Todas as Categorias</button>
+          <button class="tab-btn" data-category="privacy">👑 Top OnlyFans & Privacy</button>
+          <button class="tab-btn" data-category="amadoras">🔞 Amadoras & Universitárias</button>
+          <button class="tab-btn" data-category="famosinhas">💃 Famosinhas do TikTok</button>
+          <button class="tab-btn" data-category="longos">🎥 Vídeos Longos 4K</button>
+        </div>
+
+        <!-- Barra de Busca Simulada para Alta Interação -->
+        <div class="search-box-wrap">
+          <div class="search-box">
+            <svg class="search-icon" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+            <input type="text" id="pack-search" placeholder="Buscar modelo, categoria ou pack desejado..." autocomplete="off">
+            <span class="search-badge">Buscar no VIP</span>
+          </div>
+        </div>
+
+        <!-- Grid de Packs em Destaque -->
+        <div class="packs-grid" id="packs-grid">
+          
+          <!-- Card 1 -->
+          <div class="pack-card js-tg-link" data-cat="privacy" data-name="Top Criadoras do Privacy">
+            <div class="pack-cover-wrap">
+              <img src="assets/pack1.svg" alt="Pack Privacy" class="pack-cover-img" loading="lazy">
+              <div class="pack-badge badge-top">MAIS PEDIDAS 🔥</div>
+              <div class="pack-lock-overlay">
+                <div class="lock-circle">
+                  <svg class="lock-svg" viewBox="0 0 24 24"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/></svg>
+                </div>
+                <span class="lock-label">Desbloquear no Telegram</span>
+              </div>
+            </div>
+            <div class="pack-details">
+              <div class="pack-cat-tag">OnlyFans & Privacy</div>
+              <h3 class="pack-title">Top 10 Criadoras Mais Assinadas</h3>
+              <p class="pack-meta">140 Fotos HD • 18 Vídeos 4K • Sem Censura</p>
+              <div class="pack-footer">
+                <span class="pack-status">🟢 Pack Atualizado Hoje</span>
+                <span class="pack-cta">Acessar ➔</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="pack-card js-tg-link" data-cat="famosinhas" data-name="Famosinhas do TikTok e Insta">
+            <div class="pack-cover-wrap">
+              <img src="assets/pack2.svg" alt="Pack TikTok" class="pack-cover-img" loading="lazy">
+              <div class="pack-badge badge-viral">VIRALIZOU ⚡</div>
+              <div class="pack-lock-overlay">
+                <div class="lock-circle">
+                  <svg class="lock-svg" viewBox="0 0 24 24"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/></svg>
+                </div>
+                <span class="lock-label">Desbloquear no Telegram</span>
+              </div>
+            </div>
+            <div class="pack-details">
+              <div class="pack-cat-tag">TikTok & Instagram</div>
+              <h3 class="pack-title">Influencers & Famosinhas do TikTok</h3>
+              <p class="pack-meta">95 Fotos • 12 Vídeos Íntimos • Áudios</p>
+              <div class="pack-footer">
+                <span class="pack-status">🟢 Alta Resolução</span>
+                <span class="pack-cta">Acessar ➔</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="pack-card js-tg-link" data-cat="amadoras" data-name="Amadoras e Universitárias">
+            <div class="pack-cover-wrap">
+              <img src="assets/pack3.svg" alt="Pack Amadoras" class="pack-cover-img" loading="lazy">
+              <div class="pack-badge badge-amateur">REAL & CASEIRO 🔞</div>
+              <div class="pack-lock-overlay">
+                <div class="lock-circle">
+                  <svg class="lock-svg" viewBox="0 0 24 24"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/></svg>
+                </div>
+                <span class="lock-label">Desbloquear no Telegram</span>
+              </div>
+            </div>
+            <div class="pack-details">
+              <div class="pack-cat-tag">Amadoras & Reais</div>
+              <h3 class="pack-title">Coleção Universitárias & Amadoras</h3>
+              <p class="pack-meta">280 Fotos Caseiras • 34 Vídeos Sem Cortes</p>
+              <div class="pack-footer">
+                <span class="pack-status">🟢 100% Sem Censura</span>
+                <span class="pack-cta">Acessar ➔</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="pack-card js-tg-link" data-cat="longos" data-name="Videos Longos e Filmes 4K">
+            <div class="pack-cover-wrap">
+              <img src="assets/pack4.svg" alt="Vídeos Longos" class="pack-cover-img" loading="lazy">
+              <div class="pack-badge badge-video">CINEMA 4K 🎥</div>
+              <div class="pack-lock-overlay">
+                <div class="lock-circle">
+                  <svg class="lock-svg" viewBox="0 0 24 24"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/></svg>
+                </div>
+                <span class="lock-label">Desbloquear no Telegram</span>
+              </div>
+            </div>
+            <div class="pack-details">
+              <div class="pack-cat-tag">Vídeos Longos</div>
+              <h3 class="pack-title">Sessões Completas de 20 a 50 Minutos</h3>
+              <p class="pack-meta">45 Vídeos Longos em 4K Ultra HD • Áudio Nítido</p>
+              <div class="pack-footer">
+                <span class="pack-status">🟢 Download Liberado</span>
+                <span class="pack-cta">Acessar ➔</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="pack-card js-tg-link" data-cat="privacy" data-name="Ruivas e Loiras Desejadas">
+            <div class="pack-cover-wrap">
+              <img src="assets/pack5.svg" alt="Ruivas e Loiras" class="pack-cover-img" loading="lazy">
+              <div class="pack-badge badge-exclusive">EXCLUSIVO 💎</div>
+              <div class="pack-lock-overlay">
+                <div class="lock-circle">
+                  <svg class="lock-svg" viewBox="0 0 24 24"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/></svg>
+                </div>
+                <span class="lock-label">Desbloquear no Telegram</span>
+              </div>
+            </div>
+            <div class="pack-details">
+              <div class="pack-cat-tag">Especiais</div>
+              <h3 class="pack-title">Ruivas, Loiras & Tatuadas Mais Desejadas</h3>
+              <p class="pack-meta">160 Fotos de Ensaio • 22 Gravações Privadas</p>
+              <div class="pack-footer">
+                <span class="pack-status">🟢 Sem Tarjas</span>
+                <span class="pack-cta">Acessar ➔</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="pack-card js-tg-link" data-cat="privacy" data-name="Vazados e Flagras Secretos">
+            <div class="pack-cover-wrap">
+              <img src="assets/pack6.svg" alt="Vazados" class="pack-cover-img" loading="lazy">
+              <div class="pack-badge badge-leak">VAZADOS RECENTES 🚨</div>
+              <div class="pack-lock-overlay">
+                <div class="lock-circle">
+                  <svg class="lock-svg" viewBox="0 0 24 24"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/></svg>
+                </div>
+                <span class="lock-label">Desbloquear no Telegram</span>
+              </div>
+            </div>
+            <div class="pack-details">
+              <div class="pack-cat-tag">Vazados & Flagras</div>
+              <h3 class="pack-title">Vazados Inéditos e Flagras em Encontros</h3>
+              <p class="pack-meta">300+ Mídias Raras • Fotos de Celular • Vídeos</p>
+              <div class="pack-footer">
+                <span class="pack-status">🟢 Conteúdo Raro</span>
+                <span class="pack-cta">Acessar ➔</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="showcase-cta text-center">
+          <a href="#entrar" class="btn btn-outline-glow js-tg-link">
+            <span>Ver Todas as +50.000 Mídias no Telegram VIP</span>
+            <svg class="tg-inline-svg" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8l-1.13 7.19c-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59l2.76-2.69a.2.2 0 00-.26-.2c-2.73 1.84-4.22 2.79-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.75-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/></svg>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Comparativo de Economia (Killer Conversion Hook) -->
+    <section class="section compare-section">
+      <div class="container">
+        <div class="section-heading text-center">
+          <span class="section-tag">💰 ECONOMIA REAL</span>
+          <h2 class="section-title">Por que você economiza mais de R$ 900 por mês?</h2>
+          <p class="section-desc">Veja a diferença entre assinar criadoras individuais versus entrar no nosso Mega Acervo.</p>
+        </div>
+
+        <div class="compare-grid">
+          
+          <!-- Lado Ruim: Assinar Separado -->
+          <div class="compare-card compare-bad">
+            <div class="compare-header">
+              <span class="compare-status-badge">❌ ASSINANDO SEPARADO</span>
+              <h3>OnlyFans & Privacy Individual</h3>
+              <p class="compare-price-bad">R$ 50 a R$ 90 <span>/ mês cada</span></p>
+            </div>
+            <ul class="compare-list">
+              <li>❌ Precisa pagar mensalidade repetida todo mês</li>
+              <li>❌ Se quiser 10 modelos, gasta mais de <strong>R$ 600/mês</strong></li>
+              <li>❌ Mídias boas cobradas por fora (PPV caro de R$ 30 a R$ 80)</li>
+              <li>❌ Se cancelar, você perde o acesso a tudo</li>
+              <li>❌ Exige dados sensíveis de cartão internacional</li>
+            </ul>
+          </div>
+
+          <!-- Lado Bom: Nosso Mega Acervo -->
+          <div class="compare-card compare-good">
+            <div class="compare-glow"></div>
+            <div class="compare-header">
+              <span class="compare-status-badge badge-popular">👑 MELHOR ESCOLHA</span>
+              <h3>Nosso Mega Acervo VIP Telegram</h3>
+              <p class="compare-price-good" id="compare-price">R$ 19,90 <span>taxa única</span></p>
+            </div>
+            <ul class="compare-list">
+              <li>✅ <strong>+500 Criadoras Reunidas</strong> em um único canal</li>
+              <li>✅ Todas as fotos e vídeos liberados sem pagar nada a mais</li>
+              <li>✅ <strong>Sem mensalidades</strong> — pague uma vez e acesse para sempre</li>
+              <li>✅ Downloads liberados no seu celular ou computador</li>
+              <li>✅ Pagamento super discreto via PIX (100% anônimo)</li>
+              <li>✅ Novos packs e criadoras adicionados diariamente</li>
+            </ul>
+            <div class="compare-cta">
+              <a href="#entrar" class="btn btn-compare-tg js-tg-link">
+                Quero o Acervo Completo por R$ 19,90 ➔
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Como Funciona o Canal -->
+    <section class="section how-it-works-section">
+      <div class="container">
+        <div class="section-heading text-center">
+          <span class="section-tag">⚡ SIMPLES & DISCRETO</span>
+          <h2 class="section-title">Como funciona o seu acesso</h2>
+          <p class="section-desc">Em menos de 1 minuto você já está assistindo aos conteúdos no Telegram.</p>
+        </div>
+
+        <div class="steps-grid">
+          <div class="step-card">
+            <span class="step-num">01</span>
+            <h3>Clique no Botão VIP</h3>
+            <p>Toque em qualquer botão da página para abrir nosso robô oficial de liberação no Telegram.</p>
+          </div>
+          <div class="step-card">
+            <span class="step-num">02</span>
+            <h3>Confirmação Automática</h3>
+            <p>Selecione a forma de pagamento discreta (PIX). A aprovação é imediata em menos de 15 segundos.</p>
+          </div>
+          <div class="step-card">
+            <span class="step-num">03</span>
+            <h3>Acesso Liberado</h3>
+            <p>O robô envia o convite exclusivo do canal VIP com todas as pastas e vídeos liberados na hora.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Depoimentos dos Membros no Telegram -->
+    <section class="section reviews-section">
+      <div class="container">
+        <div class="section-heading text-center">
+          <span class="section-tag">💬 AVALIAÇÃO DA COMUNIDADE</span>
+          <h2 class="section-title">O que os membros estão dizendo</h2>
+          <p class="section-desc">Feedbacks reais retirados do grupo de comentários no Telegram.</p>
+        </div>
+
+        <div class="reviews-wrapper">
+          
+          <div class="tg-message-bubble">
+            <div class="tg-msg-header">
+              <div class="tg-msg-avatar" style="background: linear-gradient(135deg, #06b6d4, #3b82f6);">E</div>
+              <div class="tg-msg-author">
+                <span class="tg-name">Eduardo M.</span>
+                <span class="tg-time">Hoje às 15:40</span>
+              </div>
+            </div>
+            <p class="tg-msg-text">Mano, esse canal é surreal. Eu gastava mais de 200 conto por mês no Privacy e aqui tem o conteúdo de TODAS que eu seguia e muito mais. Melhor investimento que fiz kkkk 🔥</p>
+            <div class="tg-reactions">
+              <span class="tg-reaction-chip">🔥 19</span>
+              <span class="tg-reaction-chip">🚀 11</span>
+            </div>
+          </div>
+
+          <div class="tg-message-bubble">
+            <div class="tg-msg-header">
+              <div class="tg-msg-avatar" style="background: linear-gradient(135deg, #ec4899, #f43f5e);">G</div>
+              <div class="tg-msg-author">
+                <span class="tg-name">Gabriel T.</span>
+                <span class="tg-time">Ontem às 22:15</span>
+              </div>
+            </div>
+            <p class="tg-msg-text">A velocidade de download no Telegram é ótima e os vídeos vêm em 4K de verdade, sem aquela compressão horrível de site. Parabéns aos adms!</p>
+            <div class="tg-reactions">
+              <span class="tg-reaction-chip">👏 24</span>
+              <span class="tg-reaction-chip">❤️ 14</span>
+            </div>
+          </div>
+
+          <div class="tg-message-bubble">
+            <div class="tg-msg-header">
+              <div class="tg-msg-avatar" style="background: linear-gradient(135deg, #a855f7, #6366f1);">F</div>
+              <div class="tg-msg-author">
+                <span class="tg-name">Felipe C.</span>
+                <span class="tg-time">Terça-feira</span>
+              </div>
+            </div>
+            <p class="tg-msg-text">Comprei com medo de não ser liberado, mas caiu o link no meu Telegram no mesmo instante. O acervo de amadoras é absurdo!</p>
+            <div class="tg-reactions">
+              <span class="tg-reaction-chip">⚡ 16</span>
+              <span class="tg-reaction-chip">👍 9</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Caixa de Oferta / Conversão Final -->
+    <section class="section offer-section">
+      <div class="container">
+        <div class="offer-card">
+          <div class="offer-glow"></div>
+          
+          <div class="offer-badge">
+            <span class="badge-fire">🔥 VAGAS COM VALOR PROMOCIONAL</span>
+          </div>
+
+          <h2 class="offer-title">Desbloqueie o Maior Acervo do Telegram Hoje</h2>
+          <p class="offer-subtitle">+50.000 fotos e vídeos das melhores criadoras brasileiras com pagamento único.</p>
+
+          <div class="offer-features">
+            <div class="feature-row">
+              <span class="feat-check">✓</span>
+              <span>Acesso a <strong>mais de 500 criadoras diferentes</strong></span>
+            </div>
+            <div class="feature-row">
+              <span class="feat-check">✓</span>
+              <span>Novos lançamentos e vazados postados diariamente</span>
+            </div>
+            <div class="feature-row">
+              <span class="feat-check">✓</span>
+              <span>Downloads ilimitados em alta velocidade</span>
+            </div>
+            <div class="feature-row">
+              <span class="feat-check">✓</span>
+              <span>Sem cobranças mensais ou renovações automáticas</span>
+            </div>
+          </div>
+
+          <div class="price-container">
+            <span class="price-old">De R$ 79,90</span>
+            <div class="price-current">
+              <span class="price-val" id="promo-price">Apenas R$ 19,90</span>
+            </div>
+            <span class="price-notice" id="promo-note">Pagamento Único • Acesso Vitalício via PIX</span>
+          </div>
+
+          <div class="offer-cta-wrap">
+            <a href="#" class="btn-telegram-primary btn-large js-tg-link">
+              <span class="btn-shine"></span>
+              <div class="btn-content">
+                <div class="tg-icon-wrap">
+                  <svg class="tg-icon-svg" viewBox="0 0 24 24">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.75-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/>
+                  </svg>
+                </div>
+                <div class="btn-text-group">
+                  <span class="btn-headline">QUERO ENTRAR NO ACERVO VIP</span>
+                  <span class="btn-subtext">Acesso imediato no Telegram</span>
+                </div>
+                <div class="btn-arrow">➔</div>
+              </div>
+            </a>
+          </div>
+
+          <p class="urgency-counter">⚡ Atenção: O valor promocional pode ser alterado a qualquer momento.</p>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section faq-section" id="duvidas">
+      <div class="container faq-container">
+        <div class="section-heading text-center">
+          <span class="section-tag">❓ PERGUNTAS FREQUENTES</span>
+          <h2 class="section-title">Tire suas dúvidas</h2>
+          <p class="section-desc">Tudo explicado de forma transparente para você ter segurança.</p>
+        </div>
+
+        <div class="faq-accordion">
+          
+          <div class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false">
+              <span>Como recebo o acesso ao canal VIP?</span>
+              <span class="faq-toggle-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Ao clicar no botão de entrada, você será direcionado para o nosso robô oficial de liberação no Telegram. O pagamento via PIX é confirmado em segundos e o robô envia o link exclusivo do canal automaticamente.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false">
+              <span>O pagamento é discreto? Aparece algo no meu extrato?</span>
+              <span class="faq-toggle-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>100% seguro e anônimo. O pagamento aparece com uma identificação neutra e comum, sem qualquer menção a conteúdos adultos ou nomes de canais. Ninguém sabe o que você comprou.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false">
+              <span>Como encontro as criadoras que quero assistir?</span>
+              <span class="faq-toggle-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>O canal conta com um índice de busca organizado em ordem alfabética e por categorias (Famosas, Amadoras, Novinhas, Vazados). Você pode digitar o nome da criadora na barra de busca do Telegram e ir direto para o pack dela!</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false">
+              <span>O acesso é vitalício ou tem mensalidade?</span>
+              <span class="faq-toggle-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>O acesso promocional é vitalício! Você paga a taxa única uma só vez e continua no canal para sempre, recebendo todas as novas postagens diárias sem pagar nada a mais.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false">
+              <span>Posso baixar as mídias no meu celular?</span>
+              <span class="faq-toggle-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Sim! Os downloads são liberados diretamente no Telegram para você salvar na galeria do seu celular ou no seu computador quando quiser.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="site-footer">
+    <div class="container footer-content text-center">
+      <p class="footer-copy">&copy; <span id="current-year">2026</span> <strong id="footer-hub-name">MEGA ACERVO VIP</strong> • Todos os direitos reservados.</p>
+      <p class="footer-legal">Acesso estritamente destinado a maiores de 18 anos. Todo o material é compartilhado para fins de entretenimento entre membros adultos.</p>
+    </div>
+  </footer>
+
+  <!-- Barra Flutuante Fixa Mobile (Sticky CTA) -->
+  <div class="mobile-sticky-bar" id="mobile-sticky-bar">
+    <a href="#" class="btn-sticky-telegram js-tg-link">
+      <div class="sticky-icon-wrap">
+        <svg class="tg-mini-icon" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8l-1.13 7.19c-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59l2.76-2.69a.2.2 0 00-.26-.2c-2.73 1.84-4.22 2.79-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.75-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/></svg>
+      </div>
+      <div class="sticky-text">
+        <strong>LIBERAR ACERVO COMPLETO</strong>
+        <span>+50.000 Fotos e Vídeos no Telegram</span>
+      </div>
+      <span class="sticky-arrow">➔</span>
+    </a>
+  </div>
+
+  <!-- Modal de Verificação de Maioridade (+18) -->
+  <div class="age-modal" id="age-modal" aria-hidden="true">
+    <div class="age-modal-backdrop"></div>
+    <div class="age-modal-dialog">
+      <div class="age-modal-icon">🔞</div>
+      <h3 class="age-modal-title">Confirmação de Maioridade</h3>
+      <p class="age-modal-desc">
+        O acervo contém conteúdos adultos e sensuais restritos.
+        Você confirma que possui <strong>18 anos ou mais</strong>?
+      </p>
+      <div class="age-modal-actions">
+        <button type="button" class="btn-age-confirm" id="btn-age-confirm">Sim, tenho 18+ anos (Acessar Acervo)</button>
+        <button type="button" class="btn-age-deny" id="btn-age-deny">Sair do site</button>
+      </div>
+      <span class="age-modal-note">Sua navegação e identidade são 100% anônimas.</span>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

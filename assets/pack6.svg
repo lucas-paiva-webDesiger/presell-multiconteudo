@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 600" width="450" height="600">
+  <defs>
+    <linearGradient id="p6Bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2a0733" />
+      <stop offset="50%" stop-color="#140319" />
+      <stop offset="100%" stop-color="#06010a" />
+    </linearGradient>
+    <filter id="p6Blur" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="22" />
+    </filter>
+  </defs>
+  <rect width="450" height="600" fill="url(#p6Bg)"/>
+  <g filter="url(#p6Blur)">
+    <circle cx="230" cy="200" r="140" fill="#d946ef" opacity="0.6"/>
+    <ellipse cx="200" cy="350" rx="100" ry="160" fill="#8b5cf6" opacity="0.5"/>
+  </g>
+  <rect width="450" height="600" fill="#000" opacity="0.2"/>
+</svg>
