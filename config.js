@@ -7,7 +7,7 @@
 
 window.PRESELL_CONFIG = {
   // 1. LINK DO SEU TELEGRAM (Canal, Bot VIP ou Link de Pagamento)
-  telegramUrl: "https://t.me/seucanalvip",
+  telegramUrl: "https://telegram.me/isabelavip13_bot",
 
   // 2. NOME E IDENTIDADE DO SEU ACERVO / HUB
   hubName: "MEGA ACERVO VIP",
