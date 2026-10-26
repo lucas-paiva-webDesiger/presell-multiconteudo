@@ -15,7 +15,7 @@ window.PRESELL_CONFIG = {
   hubDescription: "Tenha acesso ilimitado a mais de 500 criadoras do Privacy, OnlyFans, amadoras e vazados inéditos. Todas as mídias liberadas em alta definição sem censura e com atualizações diárias.",
 
   // 3. LOGO DO HUB (Pode usar 'assets/hub-logo.svg' ou sua imagem personalizada)
-  logoImage: "assets/hub-logo.svg",
+  logoImage: "assets/logo.png",
 
   // 4. PREÇO PROMOCIONAL
   promoPrice: "Apenas R$ 19,90",
